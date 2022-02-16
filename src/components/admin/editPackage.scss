@@ -1,0 +1,20 @@
+@import 'src/app.scss';
+
+.edit-container{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    .calendar-zone{
+        @include center(column);
+        justify-content: left;
+        .calendar{
+            height: min-content;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+    }
+    
+    
+    
+}

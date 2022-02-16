@@ -1,0 +1,31 @@
+@import 'src/app.scss';
+
+.home{
+    @include fullScreen;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .searchBar{
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .search{
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+            background: $main_color;
+            @include center(row);
+            padding-left: 1rem;
+            input{
+                padding: 1rem 2rem;
+                width: 300px;
+                background: $main_color;
+            } 
+        }
+        
+    }
+}

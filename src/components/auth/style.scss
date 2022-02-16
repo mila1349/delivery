@@ -1,0 +1,36 @@
+@import 'src/app.scss';
+
+.auth{
+    width: 100%;
+    min-height: 100vh;
+    @include center(row);
+    justify-content:left;
+    text-align: center;
+    img{
+        height: 100vh;
+    }
+    .form-container{
+        width: 400px;
+        margin-left: 2rem;
+        p{
+            color: $overline_color;
+        }
+        .auth-form{
+            @include center(column);
+            margin: 3rem 2rem;
+            h2{
+                margin-bottom: 2rem;
+            }
+            input{
+                width: 80%;
+                margin: 1rem 0;
+                height: 3rem;
+            }
+        }
+        .google{
+            width: 24px;
+            height: 24px;
+            margin: 1rem;
+        }
+    }
+}

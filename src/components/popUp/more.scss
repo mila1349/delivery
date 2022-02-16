@@ -1,0 +1,59 @@
+@import 'src/app.scss';
+
+.more{
+    background: $main_color;
+    width: 60%;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    .no-img{
+        height: 60vh;
+        border: 1px solid $overline_color;
+        @include center(column);
+    }
+    .formatText-2{
+        font-size: 16px;
+    }
+    .info-container{
+        width:55% ;
+    }
+    .flex{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .close-info{
+        text-align: right;
+        cursor: pointer;
+        width: 24px;
+    }
+    .prove-img{
+        max-width: 300px;
+        height: 100%;
+        object-fit:contain;
+        margin-bottom: 2rem;
+    }
+    .info{
+        width: 100%;
+        margin-bottom: 2rem;
+        h3{
+            margin-bottom: 1rem;
+            font-weight: bolder;
+        }
+        span{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:1rem ;
+            p:nth-of-type(1){
+                color: $overline_color;
+                text-align: left;
+            }
+            p:nth-of-type(2){
+                text-align: right;
+            }
+        }
+    }
+}

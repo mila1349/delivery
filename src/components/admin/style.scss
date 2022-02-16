@@ -1,0 +1,10 @@
+@import 'src/app.scss';
+
+.dashboard{
+    @include container;
+    .editWidth{
+        width: max-content;
+    }
+}
+
+

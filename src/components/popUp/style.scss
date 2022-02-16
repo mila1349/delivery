@@ -1,0 +1,27 @@
+@import 'src/app.scss';
+
+.pop-up{
+    width: 20%;
+    height: 60%;
+    background: $main_color;
+    @include center(column);
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    text-align: center;
+
+    img{
+        width: 50%;
+    }
+    .a{
+        background: #2DC654;
+        &:hover{
+           background: #1bbd43;
+        }
+    }
+    .b{
+        background: #DE6863;
+        &:hover{
+           background: #ca4b47;
+        }
+    }
+}

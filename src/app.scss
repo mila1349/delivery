@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+}
+
+// COLOR
+$font_color: #000;
+$overline_color: rgba(0, 0, 0, 0.562);
+$main_color: #fff;
+$secondary_color: #2888FF;
+$hover: #1179f8;
+$bg_color: #F3F3F3;
+$input_color: #E0E0E0;
+$light_green: #B5ECB7;
+$dark_green: #478442;
+$light_yellow: #ECE3B5;
+$dark_yellow: #979867;
+
+// FONT 
+h1{
+    font-size: 40px;
+    font-family: 'Quattrocento', serif;
+    font-weight: 400;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Manrope', sans-serif;
+}
+h3{
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+p{
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+// COMPONENT STYLING
+.button{
+    padding: 1rem 2rem;
+    background: $secondary_color;
+    color: $main_color;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    border: none;
+    margin: 0 2rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    &:hover{
+        background:$hover ;
+    }
+}
+
+input, select, textarea{
+    border: none;
+    outline: none;
+    background: $input_color;
+    font-family: 'Manrope', sans-serif;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: $font_color;
+    &:hover{
+        color: $overline_color;
+    }
+}
+
+.logout{
+    cursor: pointer;
+    text-decoration: none;
+    color: $font_color;
+    &:hover{
+        color: $overline_color;
+    }
+}
+.no-image{
+    width: 35%;
+    min-height: 100%;
+    border: 1px dashed $overline_color;
+}
+
+
+
+// MIXIN
+@mixin fullScreen {
+    width: 100%;
+    height: 100vh;
+}
+
+@mixin center ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin container{
+    width: 100%;
+    min-height: 100vh;
+    background: $bg_color;
+    padding: 10rem 5rem;
+}
+
+.modal-bg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(4px);
+    top:0;
+    left: 0;
+    @include center(row);
+}
+.link-auth{
+    color: $overline_color;
+    text-decoration: underline;
+    &:hover{
+        color: $font_color;
+    }
+}
+
+.drop-zone{
+    // height:60vh;
+    width: 35%;
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    @include center(column);
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    &:hover{
+        background: $bg_color;
+        
+    }
+    img{
+        width: 50px;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: $overline_color;
+    }
+    .selected-file{
+        color: $font_color;
+    }
+    
+}
