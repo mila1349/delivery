@@ -42,7 +42,7 @@ function Login() {
                 </form>
                 <p>atau login dengan</p>
                 <GoogleLogin
-                    clientId='487292085207-btbaqma0brvg41g95trl20957s1a4gbm.apps.googleusercontent.com'
+                    clientId='487292085207-et1jo8qnf7qjb20402tnt9fjrij8cra7.apps.googleusercontent.com'
                     render={(renderProps)=>(
                         <img src="images/googleLogo.png" alt="" className='google' onClick={renderProps.onClick} disabled={renderProps.disabled}/>
                     )}
