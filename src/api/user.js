@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const alamat = 'https://delivery-package.herokuapp.com/auth'
+const alamat = 'https://delivery-package.herokuapp.com'
 
 export const createUser = (newUser) => axios.post(`${alamat}/signup`, newUser)
 export const createUserGoogle = (newUser) => axios.post(`${alamat}/signupGoogle`, newUser)

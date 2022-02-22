@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const alamat = 'https://delivery-package.herokuapp.com/delivery'
+const alamat = 'https://delivery-package.herokuapp.com'
 
 export const getPackage = (id) => axios.post(`${alamat}/${id}`)
 export const fetchPackages = () => axios.get(`${alamat}/admin`)
